@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuCerrado - Moda Praia</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fffaf7;
+            color: #333;
+        }
+
+        header {
+            background: #d96c6c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #f4b6b6;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .banner {
+            background: url('https://images.unsplash.com/photo-1520975922326-70c1f6b82d3c') no-repeat center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .produtos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .card h3 {
+            margin: 10px;
+        }
+
+        .card p {
+            margin: 0 10px 10px;
+        }
+
+        footer {
+            background: #d96c6c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        button {
+            background: #d96c6c;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>DuCerrado</h1>
+    <p>Moda Praia com essência do Cerrado</p>
+</header>
+
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#produtos">Biquínis</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<section class="banner">
+    <div>Seu verão começa aqui ☀️</div>
+</section>
+
+<section id="sobre" class="container">
+    <h2>Sobre a DuCerrado</h2>
+    <p>
+        A DuCerrado é uma marca de moda praia que une estilo, conforto e identidade brasileira.
+        Inspirada nas cores e formas do Cerrado, nossas peças são feitas para valorizar todos os corpos.
+    </p>
+</section>
+
+<section id="produtos" class="container">
+    <h2>Nossos Biquínis</h2>
+
+    <div class="produtos">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee" alt="Biquíni 1">
+            <h3>Biquíni Tropical</h3>
+            <p>Estampa vibrante e modelagem confortável.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e" alt="Biquíni 2">
+            <h3>Biquíni Terra</h3>
+            <p>Cores neutras inspiradas na natureza.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1603252109303-2751441f01c0" alt="Biquíni 3">
+            <h3>Biquíni Cerrado</h3>
+            <p>Design exclusivo e moderno.</p>
+            <button>Comprar</button>
+        </div>
+
+    </div>
+</section>
+
+<section id="contato" class="container">
+    <h2>Contato</h2>
+    <p>Email: contato@ducerrado.com</p>
+    <p>Instagram: @ducerrado</p>
+    <p>WhatsApp: (61) 99999-9999</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 DuCerrado - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
